@@ -1,0 +1,20 @@
+git@github.com:santiagoarenasapril-ai/maplibre-native.gitC
+git@github.com:santiagoarenasapril-ai/maplibre-native.git## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.---
+inclusion: always
+---
+
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.[mcp_servers.sonatype-mcp]
+command = "npx"
+args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp"]
+startup_timeout_ms = 20000{
+  "mcpServers": {
+    "sonatype-mcp": {
+      "type": "http",
+      "url": "https://mcp.guide.sonatype.com/mcp"
+    }
+  }
+}C
